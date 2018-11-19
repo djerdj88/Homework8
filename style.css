@@ -1,0 +1,159 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background: #1A1191;
+    width: 30%;
+    height: 500px;
+    margin: 0 auto;
+    grid-gap: 20px;
+    grid-template-areas: 
+    "ce result result result"
+    "seven eight nine plus"
+    "four five six minus"
+    "one two three multiply"
+    "zero dot equal divide";
+    -webkit-box-shadow: 7px 7px 21px 7px rgba(16,3,99,0.62);
+    -moz-box-shadow: 7px 7px 21px 7px rgba(16,3,99,0.62);
+    box-shadow: 7px 7px 21px 7px rgba(16,3,99,0.62);
+    border: 5px double blue;
+}
+
+.container div {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 40px;
+    height: 60px;
+    background: #CCCC00;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+    border: 5px outset orange;
+}
+
+.container div:active {
+    transition: all 100ms ease;
+    background: darkgoldenrod;
+}
+
+.ce {
+    grid-area: ce;
+}
+
+#result {
+    grid-area: result;
+    text-align: right;
+}
+
+.zero{
+    grid-area: zero;
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
+    
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.nine {
+    grid-area: nine;
+}
+
+.plus {
+    grid-area: plus;
+}
+
+.minus{
+    grid-area: minus;
+}
+
+.multiply{
+    grid-area: multiply;
+}
+
+.divide{
+    grid-area: divide;
+}
+
+.dot {
+    grid-area: dot;
+}
+
+.equal{
+    grid-area: equal;
+}
+
+@media (max-width: 1200px){
+    .container{
+        width: 40%;
+        grid-gap: 15px;
+    }
+}
+
+@media (max-width: 1000px){
+    .container{
+        width: 40%;
+        grid-gap: 15px;
+    }
+}
+
+@media (max-width: 800px){
+    .container{
+        width: 50%;
+        grid-gap: 10px;
+    }
+
+    .container div {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 600px){
+    .container{
+        width: 60%;
+        height: 400px;
+        grid-gap: 5px;
+    }
+
+    .container div {
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 20px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+    }
+}
+
+
+
+
+
